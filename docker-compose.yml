@@ -1,0 +1,10 @@
+services:
+  memory_postgres:
+    container_name: memory_postgres
+    image: postgres:16
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: memory_chat
+    ports:
+      - "5442:5432"
